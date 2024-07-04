@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AFragment"
+    android:background="#1D223C">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/linesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lines"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:drawableEnd="@drawable/down"/>
+
+        <!-- Notification dot -->
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@android:color/holo_red_light"
+            android:layout_alignTop="@+id/linesTextView"
+            android:layout_alignEnd="@+id/linesTextView"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:shape="oval"
+            android:id="@+id/notificationDot"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="280dp"
+        android:drawableLeft="@drawable/dots"
+        android:backgroundTint="@color/grey"
+        />
+
+
+    <!-- Centered text with margin bottom and lines above and below -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="200dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Line above the text -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/white"
+            android:alpha="0.5"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <!-- TextView with text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Start playing some music 🎵"
+            android:textSize="15dp" />
+
+        <!-- Line below the text -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/white"
+            android:alpha="0.5"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:textColor="@color/white"
+        android:text="Chase Around"
+        android:textSize="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="140dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="95dp"
+        android:src="@drawable/edit"
+        android:background="#817D7D"
+        app:shapeAppearanceOverlay="@style/CircleImageView"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:textSize="20dp"
+        android:layout_gravity="bottom|end"
+        android:drawableLeft="@drawable/star"
+        android:backgroundTint="@color/yellow"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="90dp"/>
+
+
+</FrameLayout>
